@@ -51,7 +51,6 @@ const SearchBar = () => {
           setInfo(response.data.data)
           isLoading(false)
         } catch (error) {
-          console.error(error.response.data.message);
           setError(error.response.data.message);
           isLoading(false)
         }
